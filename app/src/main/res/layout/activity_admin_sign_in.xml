@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_wet_asphalt"
+    tools:context=".ui.AdminSignIn">
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="80sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="@string/app_name"
+                android:fontFamily="cursive"
+                />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                app:met_primaryColor="@android:color/white"
+                android:id="@+id/id_mobile_nbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                android:hint="phone number"
+                app:met_singleLineEllipsis="true"
+                android:drawableStart="@drawable/number"
+                android:textColor="@android:color/white"
+                app:met_textColorHint="#B4DFDEDE"
+                android:textSize="25sp"
+                app:met_baseColor="@android:color/white"
+                app:met_underlineColor="@color/colorPrimaryDark"
+                android:inputType="number"
+                app:met_floatingLabelText="Mobile Number"
+                app:met_floatingLabelTextColor="@android:color/white"
+                android:layout_margin="08dp"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/id_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                app:met_floatingLabel="highlight"
+                app:met_baseColor="@android:color/white"
+                android:drawableStart="@drawable/password"
+                app:met_maxCharacters="12"
+                android:hint="password"
+                app:met_floatingLabelText="password"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_textColorHint="#B4DFDEDE"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                app:met_primaryColor="@android:color/white"
+                app:met_underlineColor="@color/colorPrimaryDark"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:text="@string/signin"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

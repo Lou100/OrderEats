@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/id_menu__name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="08dp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/colorPrimary"
+            android:hint="Menu"
+            app:met_floatingLabelText="Menu"
+            app:met_floatingLabelTextColor="@color/colorPrimary"
+            app:met_textColorHint="@android:color/darker_gray"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_underlineColor="@color/colorPrimary"
+            android:inputType="textPersonName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:background="@color/colorPrimary"
+                android:id="@+id/btn_select_img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/select"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                />
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_Upload"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/upload"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
